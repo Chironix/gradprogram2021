@@ -38,11 +38,18 @@ This is the master repo for the Chironix 2021 Graduate Program's problem.
   * Finalists will have a chance to jump on a VC with Chironix Engineers to ensure smooth deployment, this session will be time limited, parties unable to get their entry deployed may be eliminated.
   * Conducting final rounds on our real hardware in our lab from DDDMMYY.
   * Announcing winners DDMMYY.
-  * A list of helpful lidar resources is here.
-  * A list of helpful vision resources.
+  * A list of helpful lidar resources is here. [#TODO: Add resources]
+  * A list of helpful vision resources. [#TODO: Add resources]
   * URDFs are in the repos.
-  * Submit via PR.
+  * Submit via [PR](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
   * Getting started instructions are in the folders enclosed.
+  * [ROS Start Guide](http://wiki.ros.org/ROS/StartGuide)
+  * [Useful Scout Documentation](https://github.com/agilexrobotics/scout_mini_ros)
+  * [Useful Hunter Documentation](https://github.com/agilexrobotics/hunter_ros)
+  * [Useful Jackal Documentation](http://wiki.ros.org/Robots/Jackal)
+  * [Gazebo Getting started & Installation](http://gazebosim.org/tutorials?tut=quick_start)
+  * [Useful Husky Documentation](http://wiki.ros.org/Robots/Husky)
+  * The grading rubrick. [#TODO: Create the chart, link it here]
 
 ## The potential deployment platforms
     * Clearpath Husky or Jackal, equipped with a realsense camera for odometery, a velodyne 16, [#TODO: Fill in] 
