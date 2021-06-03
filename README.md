@@ -1,5 +1,5 @@
 # gradprogram2021
-<img src='https://www.chironix.com/wp-content/uploads/2020/08/cropped-Chironix-logo-r-61-copy-2-2x-1536x246.png' alt="Chironix Logo" />
+<img src='https://global-uploads.webflow.com/6029e95498d11750a14b3e48/602cb317710199017177ecb9_Chironix-logo-r-61%20copy%202-p-500.png' alt="Chironix Logo" />
 ### ©Chironix, pty ltd.
 
 This is the master repo for the Chironix 2021 Graduate Program's problem.
