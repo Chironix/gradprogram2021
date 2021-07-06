@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<sdf version="1.4">
+    <model name="desk2">
+        <static>true</static>
+        <link name="desk3_link">
+
+            <visual name="desk3_mesh">
+                <geometry>
+                    <mesh>
+                        <uri>model://desk3/meshes/model.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+
+            <collision name="desk3_collison">
+                <geometry>
+                    <box>
+                        <size>1 1 1</size>
+                    </box>
+                </geometry>
+            </collision>
+        </link>
+    </model>
+</sdf>
