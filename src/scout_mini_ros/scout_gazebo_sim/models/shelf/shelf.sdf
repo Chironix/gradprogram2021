@@ -14,9 +14,10 @@
             </visual>
 
             <collision name="shelf_collison">
+                <pose>0.501637 0.130569 0.911112</pose>
                 <geometry>
                     <box>
-                        <size>1 1 1</size>
+                        <size>1.038850 0.268718 1.795460</size>
                     </box>
                 </geometry>
             </collision>

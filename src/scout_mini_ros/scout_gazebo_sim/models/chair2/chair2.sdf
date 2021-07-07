@@ -14,9 +14,10 @@
             </visual>
 
             <collision name="chair2_collison">
+                <pose> 0  -0.013038 0.559203 0 0 0</pose>
                 <geometry>
                     <box>
-                        <size>1 1 1</size>
+                        <size>0.625848 0.722155 1.134810</size>
                     </box>
                 </geometry>
             </collision>

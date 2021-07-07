@@ -14,9 +14,10 @@
             </visual>
 
             <collision name="laptop_collison">
+                <pose>0.421301 0.261542 0.179423 0 0 0</pose>
                 <geometry>
                     <box>
-                        <size>1 1 1</size>
+                        <size>0.838392 0.529068 0.594052</size>
                     </box>
                 </geometry>
             </collision>

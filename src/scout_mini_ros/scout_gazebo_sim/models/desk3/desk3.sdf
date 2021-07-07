@@ -14,9 +14,10 @@
             </visual>
 
             <collision name="desk3_collison">
+                <pose> -20.431646 4.602402 0.394284 0 0 0</pose>
                 <geometry>
                     <box>
-                        <size>1 1 1</size>
+                        <size>1.591670 0.804758 0.765207</size>
                     </box>
                 </geometry>
             </collision>

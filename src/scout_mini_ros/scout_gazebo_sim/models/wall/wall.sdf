@@ -14,13 +14,13 @@
             </visual>
 
             <collision name="wall_collison">
+                <pose>0 0 1</pose>
                 <geometry>
                     <box>
-                        <size>1 1 1</size>
+                        <size>6.034290 0.105044 2.00</size>
                     </box>
                 </geometry>
             </collision>
-
         </link>
     </model>
 </sdf>

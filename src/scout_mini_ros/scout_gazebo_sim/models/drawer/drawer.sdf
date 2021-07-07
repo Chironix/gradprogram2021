@@ -14,9 +14,10 @@
             </visual>
 
             <collision name="drawer_collison">
+                <pose>2.053917 -1.803429 0.317839 0 0 0</pose>
                 <geometry>
                     <box>
-                        <size>1 1 1</size>
+                        <size>0.429536 0.536622 0.612838</size>
                     </box>
                 </geometry>
             </collision>
