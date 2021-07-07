@@ -14,9 +14,10 @@
             </visual>
 
             <collision name="cup_collison">
+                <pose>0 0 0.070480 0 0 0</pose>
                 <geometry>
                     <box>
-                        <size>1 1 1</size>
+                        <size>0.062209 0.057846 0.069314</size>
                     </box>
                 </geometry>
             </collision>

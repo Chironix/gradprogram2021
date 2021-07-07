@@ -14,9 +14,10 @@
             </visual>
 
             <collision name="books_collison">
+                <pose> 0.073440 0.355108 0.132534 0 0 0</pose>
                 <geometry>
                     <box>
-                        <size>1 1 1</size>
+                        <size>0.176458 0.770352 0.287780</size>
                     </box>
                 </geometry>
             </collision>

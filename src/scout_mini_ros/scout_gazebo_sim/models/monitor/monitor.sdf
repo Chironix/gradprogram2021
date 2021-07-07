@@ -14,9 +14,10 @@
             </visual>
             
             <collision name="monitor_collison">
+                <pose>0.547024 -0.602109 0.108977 0 0 0</pose>
                 <geometry>
                     <box>
-                        <size>1 1 1</size>
+                        <size>0.476264 0.153958 0.347171</size>
                     </box>
                 </geometry>
             </collision>
