@@ -26,7 +26,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 <launch>
 
   <arg name="laser_enabled" default="true"/>
-  <arg name="realsense_enabled" default="false"/>
+  <arg name="realsense_enabled" default="true"/>
 
   <include file="$(find husky_gazebo)/launch/playpen.launch" />
 
@@ -34,5 +34,5 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
     <arg name="laser_enabled" value="$(arg laser_enabled)"/>
     <arg name="realsense_enabled" value="$(arg realsense_enabled)"/>
   </include>
-
 </launch>
+
