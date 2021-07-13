@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+
+<sdf version="1.4">
+    <model name="smallWall">
+        <static>true</static>
+        <link name="smallWall_link">
+
+            <visual name="smallWall_mesh">
+                <geometry>
+                    <mesh>
+                        <uri>model://smallWall/meshes/model.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+
+            <collision name="smallWall_collison">
+                <pose>0 0 1</pose>
+                <geometry>
+                    <box>
+                        <size>6.034290 0.105044 2.00</size>
+                    </box>
+                </geometry>
+            </collision>
+        </link>
+    </model>
+</sdf>
