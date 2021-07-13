@@ -1,0 +1,923 @@
+<?xml version="1.0"?>
+
+<sdf version="1.4">
+    <world name="chironix">
+        <include>
+            <uri>model://ground_plane</uri>
+        </include>
+
+        <include>
+            <uri>model://sun</uri>
+        </include>
+
+        <!-- Walls-->
+        
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_1</name>
+            <pose>8.95 9 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_2</name>
+            <pose>2.95 9 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_3</name>
+            <pose>0 6 0 0 0 1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_4</name>
+            <pose>0 0 0 0 0 1.570700</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_5</name>
+            <pose>0 -6 0 0 0 1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_6</name>
+            <pose>0 -12 0 0 0 1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_7</name>
+            <pose>0 -18 0 0 0 1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_8</name>
+            <pose>6 -15 0 0 0 1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_9</name>
+            <pose>9 -12.05 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_10</name>
+            <pose>11.95 -9 0 0 0 1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_11</name>
+            <pose>9 -6.05 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_12</name>
+            <pose>6.05 -3 0 0 0 1.5707</pose>
+        </include>
+
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_13</name>
+            <pose>11.95 -3 0 0 0 1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_14</name>
+            <pose>14.95 9 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_15</name>
+            <pose>17.9 5.95 0 0 0 1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_16</name>
+            <pose>20.95 9 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_17</name>
+            <pose>26.95 9 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_18</name>
+            <pose>29.9 5.95 0 0 0 1.5707</pose>
+        </include>
+        
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_19</name>
+            <pose>15 -6.05 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_20</name>
+            <pose>17.9 -3 0 0 0 1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_21</name>
+            <pose>20.90 -6.05 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_22</name>
+            <pose>29.9 0 0 0 0 1.5707</pose>
+        </include>
+
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_23</name>
+            <pose>17.9 -9 0 0 0 1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_24</name>
+            <pose>20.85 -12 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_25</name>
+            <pose>23.85 -9 0 0 0 1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_26</name>
+            <pose>23.85 -15 0 0 0 1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_27</name>
+            <pose>32.95 -6.05 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_28</name>
+            <pose>36 -9 0 0 0 1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_29</name>
+            <pose>36 -15 0 0 0 1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_30</name>
+            <pose>0 -24 0 0 0 1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_31</name>
+            <pose>2.95 -27 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_32</name>
+            <pose>36 -18.05 0 0 0 1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_33</name>
+            <pose>5.9 -24 0 0 0 1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_34</name>
+            <pose>8.9 -27 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_35</name>
+            <pose>14.9 -27 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_36</name>
+            <pose>20.9 -27 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_37</name>
+            <pose>26.9 -27 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_37</name>
+            <pose>26.9 -27 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_38</name>
+            <pose>28.91 -27 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_39</name>
+            <pose>21.5 -24 0 0 0 1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_40</name>
+            <pose>33 -27 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_41</name>
+            <pose>36 -24.05 0 0 0 1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_42</name>
+            <pose>26.85 -6.05 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_43</name>
+            <pose>29.9 -3.1 0 0 0 1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://smallWall</uri>
+            <name>wall_44</name>
+            <pose>4.35 -23 0 0 0 0</pose>
+        </include>
+
+        <include>
+
+            <uri>model://smallWall</uri>
+            <name>wall_45</name>
+            <pose>13.5 -0.05 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://smallWall</uri>
+            <name>wall_46</name>
+            <pose>30.05 -21.5 0 0 0 1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_47</name>
+            <pose>33 -20 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://smallWall</uri>
+            <name>wall_48</name>
+            <pose>26.85 -7.6 0 0 0 1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://smallWall</uri>
+            <name>wall_49</name>
+            <pose>25.4 -11.4 0 0 0 0 </pose>
+        </include>
+
+        <include>
+            <uri>model://smallWall</uri>
+            <name>wall_50</name>
+            <pose>1.55 -18.5 0 0 0 0 </pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_51</name>
+            <pose>3 -9 0 0 0 0 </pose>
+        </include>
+
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_52</name>
+            <pose>27 -24 0 0 0 1.5707 </pose>
+        </include>
+
+        <include>
+            <uri>model://smallWall</uri>
+            <name>wall_53</name>
+            <pose>23 -21.05 0 0 0 0 </pose>
+        </include>
+    
+        <!-- Walls End-->
+
+        <!-- Left Half of Lab-->
+        <include>
+            <uri>model://conference1</uri>
+            <name>meeting_room</name>
+            <pose>1.7 -25.75 0.0 0 0 0</pose>
+        </include>  
+
+        <include>
+            <uri>model://fire</uri>
+            <name>lab_fire</name>
+            <pose>6 -0.5 0.25 0 0 1.5707</pose>
+        </include> 
+        
+        <include>
+            <uri>model://fire</uri>
+            <name>workshop_fire</name>
+            <pose>18.12 -0.5 0.25 0 0 1.5707</pose>
+        </include> 
+
+        <include>
+            <uri>model://fire</uri>
+            <name>marketing_fire</name>
+            <pose>24.08 -17.50 0.25 0 0 1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://desk3</uri>
+            <name>dannies_desk</name>
+            <pose>5.0 26.18 -0.020 0 0 1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://desk3</uri>
+            <name>dannies_desk</name>
+            <pose>5.0 26.18 -0.020 0 0 1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://desk</uri>
+            <name>aks_desk_1</name>
+            <pose>0.850 6.55 0 0 0 1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://desk</uri>
+            <name>aks_desk_2</name>
+            <pose>0.05 8.15 0 0 0 -1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://desk</uri>
+            <name>aks_desk_3</name>
+            <pose>0.05 8.15 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://desk</uri>
+            <name>com_desk_1</name>
+            <pose>1.56 8.15 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://desk</uri>
+            <name>kyle_desk_1</name>
+            <pose>3.08 8.15 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://desk</uri>
+            <name>kyle_desk_2</name>
+            <pose>4.68 8.95 0 0 0 -1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://desk</uri>
+            <name>kyle_desk_3</name>
+            <pose>4.7 8.95 0 0 0 3.14</pose>
+        </include>
+
+        <include>
+            <uri>model://desk</uri>
+            <name>kyle_desk_4</name>
+            <pose>5.48 7.35 0 0 0 1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://shelf</uri>
+            <name>shelf</name>
+            <pose>0.05 4.5 0 0 0 -1.5707</pose>
+        </include> 
+
+        <include>
+            <uri>model://books</uri>
+            <name>books</name>
+            <pose>1.6 8.9 0.735 0 0 -1.5707</pose>
+        </include> 
+
+        <include>
+            <uri>model://laptop</uri>
+            <name>dannies_laptop</name>
+            <pose>0.55 5.35 0.735 0 0 1.5707</pose>
+        </include>
+        
+        <include>
+            <uri>model://laptop</uri>
+            <name>aks_laptop</name>
+            <pose>0.4 7.95 0.735 0 0 0.7799</pose>
+        </include> 
+
+        <include>
+            <uri>model://mug</uri>
+            <name>aks_mug</name>
+            <pose>0.65 7.9 0.755 0 0 0</pose>
+        </include>  
+
+        <include>
+            <uri>model://laptop</uri>
+            <name>kyle_laptop</name>
+            <pose>4.45 8.55 0.735 0 0 -0.7799</pose>
+        </include> 
+
+        <include>
+            <uri>model://monitor</uri>
+            <name>com_monitor</name>
+            <pose>2.590770 9.45 0.85 0 0 0</pose>
+        </include> 
+
+        <include>
+            <uri>model://monitor</uri>
+            <name>kyle_monitor</name>
+            <pose>5.85 8.45 0.85 0 0 -1.5707</pose>
+        </include> 
+
+        <include>
+            <uri>model://chair1</uri>
+            <name>com_chair</name>
+            <pose>-0.5 5.8 0 0 0 0</pose>
+        </include> 
+
+        <include>
+            <uri>model://chair2</uri>
+            <name>dannie_chair</name>
+            <pose>1 5.8 0 0 0 -1.5707</pose>
+        </include> 
+
+        <include>
+            <uri>model://chair2</uri>
+            <name>aks_chair</name>
+            <pose>1.20 7.74 0 0 0 -2.23</pose>
+        </include> 
+
+        <include>
+            <uri>model://chair2</uri>
+            <name>kyle_chair</name>
+            <pose>4.23 7.78 0 0 0 2.23</pose>
+        </include>
+
+        <include>
+            <uri>model://drawer</uri>
+            <name>drawer_1</name>
+            <pose>7.55 -2 0 0 0 -1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://drawer</uri>
+            <name>drawer_2</name>
+            <pose>7.55 -1.5 0 0 0 -1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://drawer</uri>
+            <name>drawer_3</name>
+            <pose>7.55 -1 0 0 0 -1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://drawer</uri>
+            <name>drawer_4</name>
+            <pose>7.55 -0.5 0 0 0 -1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://drawer</uri>
+            <name>drawer_5</name>
+            <pose>7.55 0 0 0 0 -1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://drawer</uri>
+            <name>drawer_6</name>
+            <pose>7.55 0.5   0 0 0 -1.5707</pose>
+        </include>
+        
+        <include>
+            <uri>model://shelf1</uri>
+            <name>shelf1_1</name>
+            <pose>7.24 -3   0 0 0 -1.5707</pose>
+        </include>  
+
+        <include>
+            <uri>model://shelf1</uri>
+            <name>shelf1_2</name>
+            <pose>7.24 -11   0 0 0 -1.5707</pose>
+        </include>  
+
+        <include>
+            <uri>model://shelf1</uri>
+            <name>shelf1_3</name>
+            <pose>7.24 -12.2  0 0 0 -1.5707</pose>
+        </include>  
+
+        <include>
+            <uri>model://shelf1</uri>
+            <name>shelf1_4</name>
+            <pose>7.24 -13.4   0 0 0 -1.5707</pose>
+        </include> 
+        
+        <include>
+            <uri>model://mug</uri>
+            <name>kyle_mug</name>
+            <pose>4.2 8.4 0.755 0 0 0</pose>
+        </include>  
+
+        <include>
+            <uri>model://smallTable1</uri>
+            <name>robot_table_1</name>
+            <pose>8.5 -3 0 0 0 0</pose>
+        </include>  
+
+        <include>
+            <uri>model://smallTable1</uri>
+            <name>robot_table_2</name>
+            <pose>8.25 -10 0 0 0 1.5707</pose>
+        </include>  
+        <!-- Left Half of Lab End-->
+        
+        <!-- Right Half of Lab-->
+        <include>
+            <uri>model://desk</uri>
+            <name>john_desk_1</name>
+            <pose>17.85 8.95 0 0 0 3.14</pose>
+        </include> 
+
+        <include>
+            <uri>model://desk</uri>
+            <name>john_desk_2</name>
+            <pose>17.05 8.15 0 0 0 -1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://desk</uri>
+            <name>john_desk_3</name>
+            <pose>17.85 6.55 0 0 0 1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://laptop</uri>
+            <name>john_laptop</name>
+            <pose>16.93 8.51 0.735 0 0 -0.7799</pose>
+        </include> 
+
+        <include>
+            <uri>model://chair2</uri>
+            <name>john_chair</name>
+            <pose>16.66 7.72 0 0 0 2.2</pose>
+        </include> 
+
+        <include>
+            <uri>model://cup</uri>
+            <name>john_cup</name>
+            <pose>16.4 8.35 0.735 0 0 0</pose>
+        </include> 
+
+
+        <include>
+            <uri>model://desk</uri>
+            <name>com_desk_2</name>
+            <pose>16.34 8.95 0 0 0 3.14</pose>
+        </include>
+
+        <include>
+            <uri>model://desk</uri>
+            <name>adi_desk_1</name>
+            <pose>14.83 8.95 0 0 0 3.14</pose>
+        </include> 
+
+        <include>
+            <uri>model://desk</uri>
+            <name>adi_desk_1</name>
+            <pose>14.83 8.95 0 0 0 3.14</pose>
+        </include> 
+
+        <include>
+            <uri>model://desk</uri>
+            <name>adi_desk_2</name>
+            <pose>13.25 7.35 0 0 0 1.5707</pose>
+        </include> 
+
+        <include>
+            <uri>model://desk</uri>
+            <name>adi_desk_3</name>
+            <pose>12.45 8.95 0 0 0 -1.5707</pose>
+        </include> 
+
+        <include>
+            <uri>model://laptop</uri>
+            <name>adi_laptop</name>
+            <pose>12.9 8.05 0.735 0 0 0.7799</pose>
+        </include> 
+
+        <include>
+            <uri>model://chair2</uri>
+            <name>adi_chair</name>
+            <pose>13.70 7.74 0 0 0 -2.2</pose>
+        </include> 
+
+        <include>
+            <uri>model://cup</uri>
+            <name>adi_cup</name>
+            <pose>13.5 8.5 0.735 0 0 0</pose>
+        </include> 
+
+        <include>
+            <uri>model://thibo</uri>
+            <name>thibo_1</name>
+            <pose>7.006670 6.887680 0 0 0 0</pose>
+        </include> 
+
+        <include>
+            <uri>model://workstation</uri>
+            <name>workstation_1</name>
+            <pose>12.050000 -4.8 0 0 0 0</pose>
+        </include> 
+
+        <include>
+            <uri>model://workstation</uri>
+            <name>workstation_1</name>
+            <pose>13.90000 -4.8 0 0 0 0</pose>
+        </include> 
+
+        <include>
+            <uri>model://workstation</uri>
+            <name>workstation_1</name>
+            <pose>15.75 -4.8 0 0 0 0</pose>
+        </include> 
+
+        <include>
+            <uri>model://drone</uri>
+            <name>done</name>
+            <pose>24.50 -1 0 0 0 0.3</pose>
+        </include> 
+
+        <include>
+            <uri>model://office2</uri>
+            <name>office_2</name>
+            <pose>10.80 7.25 0 0 0 1.5707</pose>
+        </include> 
+
+        <include>
+            <uri>model://office2</uri>
+            <name>office_3</name>
+            <pose>6.85 7.25 0 0 0 1.5707</pose>
+        </include> 
+
+        <include>
+            <uri>model://smallTable1</uri>
+            <name>small_table_3</name>
+            <pose>9.25 6.93 0 0 0 1.5707</pose>
+        </include> 
+        <!-- Right Half of Lab End-->
+
+        <!-- Lunch Area-->
+
+        <include>
+            <uri>model://lounge</uri>
+            <name>lounge</name>
+            <pose>6.27 -14.337 0 0 0 0</pose>
+        </include> 
+
+        <include>
+            <uri>model://kitchen</uri>
+            <name>kitchen_1</name>
+            <pose>12.9 -26.95 0 0 0 1.5707</pose>
+        </include> 
+
+
+        <include>
+            <uri>model://kitchen</uri>
+            <name>kitchen_1</name>
+            <pose>14.4 -26.95 0 0 0 1.5707</pose>
+        </include> 
+
+
+        <include>
+            <uri>model://table</uri>
+            <name>table</name>
+            <pose>8.922 -24.966 0 0 0 1.5707</pose>
+        </include> 
+
+        <include>
+            <uri>model://chair3</uri>
+            <name>chair_1</name>
+            <pose>7.8 -22.25 0 0 0 1.5707</pose>
+        </include> 
+
+        <include>
+            <uri>model://chair3</uri>
+            <name>chair_2</name>
+            <pose>7.8 -22.75 0 0 0 1.5707</pose>
+        </include> 
+
+        <include>
+            <uri>model://chair3</uri>
+            <name>chair_3</name>
+            <pose>7.8 -23.25 0 0 0 1.5707</pose>
+        </include> 
+
+        <include>
+            <uri>model://chair3</uri>
+            <name>chair_4</name>
+            <pose>7.8 -23.75 0 0 0 1.5707</pose>
+        </include> 
+
+        <include>
+            <uri>model://chair3</uri>
+            <name>chair_5</name>
+            <pose>7.8 -24.25 0 0 0 1.5707</pose>
+        </include> 
+
+        <include>
+            <uri>model://chair3</uri>
+            <name>chair_6</name>
+            <pose>7.8 -24.75 0 0 0 1.5707</pose>
+        </include> 
+
+        <include>
+            <uri>model://chair3</uri>
+            <name>chair_7</name>
+            <pose>9 -22.25 0 0 0 -1.5707</pose>
+        </include> 
+
+        <include>
+            <uri>model://chair3</uri>
+            <name>chair_8</name>
+            <pose>9 -22.75 0 0 0 -1.5707</pose>
+        </include> 
+
+        <include>
+            <uri>model://chair3</uri>
+            <name>chair_9</name>
+            <pose>9 -23.25 0 0 0 -1.5707</pose>
+        </include> 
+
+        <include>
+            <uri>model://chair3</uri>
+            <name>chair_10</name>
+            <pose>9 -23.75 0 0 0 -1.5707</pose>
+        </include> 
+
+        <include>
+            <uri>model://chair3</uri>
+            <name>chair_11</name>
+            <pose>9 -24.25 0 0 0 -1.5707</pose>
+        </include> 
+
+        <include>
+            <uri>model://chair3</uri>
+            <name>chair_12</name>
+            <pose>9 -24.75 0 0 0 -1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://chair3</uri>
+            <name>chair_13</name>
+            <pose>8.45 -25.06 0 0 0 3.14</pose>
+        </include> 
+
+        <include>
+            <uri>model://chair3</uri>
+            <name>chair_14</name>
+            <pose>8.45 -21.86 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://person3</uri>
+            <name>person_3</name>
+            <pose>18.7544 -20.2406 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://stairs</uri>
+            <name>stairs</name>
+            <pose>18.00 -20.34 0 0 0 -1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://thibo</uri>
+            <name>thibo_2</name>
+            <pose>12.090400 -13.463600 0 0 0 0.45</pose>
+        </include>
+
+        <!-- Lunch Area End-->
+
+        <!-- Marketing Area-->
+
+        <include>
+            <uri>model://office2</uri>
+            <name>office_4</name>
+            <pose>25.6 -16 0 0 0 0</pose>
+        </include> 
+
+        <include>
+            <uri>model://office2</uri>
+            <name>office_4</name>
+            <pose>25.6 -14 0 0 0 0</pose>
+        </include> 
+
+
+        <include>
+            <uri>model://conference</uri>
+            <name>conference</name>
+            <pose>33.7 -13.2 0 0 0 0</pose>
+        </include> 
+
+        <include>
+            <uri>model://lounge1</uri>
+            <name>main_lounge1</name>
+            <pose>34.850 -22.50 0 0 0 -1.5707</pose>
+        </include> 
+
+        <include>
+            <uri>model://lounge1</uri>
+            <name>main_lounge2</name>
+            <pose>34.550000 -25 0 0 0 3.14</pose>
+        </include> 
+
+        <include>
+            <uri>model://flowerpot</uri>
+            <name>flowerpot_1</name>
+            <pose>34.750000 -26.850000 0 0 0 0</pose>
+        </include> 
+
+        <include>
+            <uri>model://flowerpot</uri>
+            <name>flowerpot_2</name>
+            <pose>35.85 -20.1 0 0 0 3.14</pose>
+        </include> 
+
+        <include>
+            <uri>model://person1</uri>
+            <name>person_1</name>
+            <pose>32.569200 -14.888900 0 0 0 3.14</pose>
+        </include>
+
+        <include>
+            <uri>model://person2</uri>
+            <name>person_2</name>
+            <pose>32.027900 -21.669600 0 0 0 3.14</pose>
+        </include>
+
+        <include>
+            <uri>model://office1</uri>
+            <name>office_1</name>
+            <pose>24.2 -8.55 0 0 0 1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://smallTable</uri>
+            <name>coffee_table</name>
+            <pose>34 -24 0 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://conference1</uri>
+            <name>conference_2</name>
+            <pose>22.8 -25.5 0 0 0 0</pose>
+        </include>
+
+    </world>
+</sdf>

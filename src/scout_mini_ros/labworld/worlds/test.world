@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<sdf version="1.4">
+    <world name="chironix">
+        <include>
+            <uri>model://ground_plane</uri>
+        </include>
+
+        <include>
+            <uri>model://sun</uri>
+        </include>
+
+        <!-- Walls-->
+        
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_1</name>
+            <pose>8.95 9 0 0 0 0</pose>
+        </include>
+
+    </world>
+</sdf>
