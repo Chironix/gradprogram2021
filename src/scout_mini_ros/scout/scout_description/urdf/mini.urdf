@@ -239,7 +239,7 @@
       <!-- still need to check if the actual output, if the rotation is just visual or... -->
       <origin rpy="1.5708 0 0" xyz="0 0 0.0"/>
       <geometry>
-        <mesh filename="package://realsense2_description/meshes/t265.stl"/>
+        <mesh filename="package://realsense2_description/meshes/d415.stl"/>
       </geometry>
       <material name="aluminum">
         <color rgba="0.5 0.5 0.5 1"/>

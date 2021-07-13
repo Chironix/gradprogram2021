@@ -13,9 +13,9 @@ raytrace_range: 5.0
 max_obstacle_height: 1.5
 min_obstacle_height: 0.1
 
-# global_frame: map
-# rolling_window: true
-# always_send_full_costmap: true
-# static_map: false
-# map_type: costmap
+global_frame: odom
+rolling_window: true
+always_send_full_costmap: true
+static_map: false
+map_type: costmap
 

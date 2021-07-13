@@ -9,25 +9,30 @@
   <!-- <link name="usb_cam"/> -->
   <!-- <link name="d435_link" /> -->
 
-  <!-- t265 -->
+  <!-- t265
   <link name="t265_pose_frame">
+    
     <visual>
-      <!-- still need to check if the actual output, if the rotation is just visual or... -->
-      <origin xyz="0 0 0.0" rpy="1.5708 0 0" />
+      still need to check if the actual output, if the rotation is just visual or... 
+      <origin xyz="0 0 0.0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="package://realsense2_description/meshes/t265.stl" />
+        <mesh filename="package://realsense2_description/meshes/d415.stl" />
       </geometry>
       <material name="aluminum">
         <color rgba="0.5 0.5 0.5 1" />
       </material>
     </visual>
+    
   </link>
+  
+
 
   <joint name="cam_link_t265" type="fixed">
     <origin xyz="0.18 0 0.10" rpy="0 0 0" />
     <parent link="base_link" />
     <child link="t265_pose_frame" />
   </joint>
+-->
 
   <xacro:sensor_d435 name="d435" parent="base_link">
     <origin xyz="0.19 0 0.06" rpy="0 0 0"/>
