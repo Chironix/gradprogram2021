@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<sdf version="1.4">
+    <model name="table">
+        <static>true</static>
+        <link name="table_link">
+
+            <visual name="table_mesh">
+                <geometry>
+                    <mesh>
+                        <uri>model://table/meshes/model.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+
+            <collision name="table_collison">
+                <pose>1.512611 0.491706 0.367172 0 0 0 </pose>
+                <geometry>
+                    <box>
+                        <size>3.046340 1.004740 0.805770</size>
+                    </box>
+                </geometry>
+            </collision>
+
+        </link>
+    </model>
+</sdf>
