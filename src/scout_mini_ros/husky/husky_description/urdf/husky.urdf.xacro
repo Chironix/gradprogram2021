@@ -217,41 +217,6 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
   <xacro:include filename="$(arg urdf_extras)" />
 
   <!-- Velodyne -->
-  <!-- <xacro:include filename="$(find velodyne_description)/urdf/VLP-16.urdf.xacro" />
-  <xacro:VLP-16 name="laser_scan" parent="base" ros_topic="base_scan/scan"
-      update_rate="20" min_angle="-1.57" max_angle="1.57" >
-        <origin xyz="${0.4 - 0.01 - 0.04} 0 0.3" rpy="0 0 0" />
-    </xacro:VLP-16>
-
-<joint name="laser_joint" type="fixed">
-        <origin xyz="${0.4 - 0.01 - 0.04} 0 0.3" rpy="0 0 0" />
-        <parent link="base_link" />
-        <child link="laser_link"/>
-    </joint>
-    <link name="laser_link">
-      <inertial>
-            <mass value="0.01" />
-            <origin xyz="0 0 0" />
-            <inertia ixx="0.001"  ixy="0.0"  ixz="0.0"
-            iyy="0.001"  iyz="0.0"
-                izz="0.001" />
-            </inertial>
-            <visual>
-                <origin xyz="0 0 0" rpy="0 0 0"/>
-                <geometry>
-                    <box size="0.05 0.05 0.1" />
-                </geometry>
-            </visual>
-            <collision>
-                <origin xyz="0 0 0" rpy="0 0 0"/>
-                <geometry>
-                    <box size="0.05 0.05 0.1" />
-                </geometry>
-            </collision>
-        </link> -->
-
-  <!--Velodyne and Velodyne Interface -->
-  <link name="velodyne_mount"/>
 
   <joint name="velodyne_mount_joint" type="fixed">
     <parent link="base_link"/>
@@ -259,9 +224,28 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
     <origin xyz="0.1 0 0.17" rpy="0 0 0"/>
   </joint>
   
+  <link name="velodyne_mount">
+    <inertial>
+        <mass value="0.01" />
+        <origin xyz="0 0 0" />
+        <inertia ixx="0.001"  ixy="0.0"  ixz="0.0"
+        iyy="0.001"  iyz="0.0"
+            izz="0.001" />
+        </inertial>
+        <visual>
+            <geometry>
+                <box size="0.05 0.05 0.1" />
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <box size="0.05 0.05 0.1" />
+            </geometry>
+        </collision>
+    </link> 
 
   <xacro:VLP-16 parent="velodyne_mount" name="velodyne" topic="/velodyne_points" hz="10" organize_cloud="true" samples="200" gpu="false">
-    <origin xyz="0 0 0" rpy="0 0 0" />
+    <origin xyz="0.1 0 0.17" rpy="0 0 0"/>
   </xacro:VLP-16>
 
 </robot>
