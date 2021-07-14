@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<sdf version="1.4">
+    <model name="cup">
+        <static>true</static>
+        <link name="cup_link">
+
+            <visual name="cup_mesh">
+                <geometry>
+                    <mesh>
+                        <uri>model://cup/meshes/model.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+
+            <collision name="cup_collison">
+                <pose>0 0 0.070480 0 0 0</pose>
+                <geometry>
+                    <box>
+                        <size>0.062209 0.057846 0.069314</size>
+                    </box>
+                </geometry>
+            </collision>
+
+        </link>
+    </model>
+</sdf>

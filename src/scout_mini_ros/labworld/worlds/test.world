@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<sdf version="1.4">
+    <world name="chironix">
+        <include>
+            <uri>model://ground_plane</uri>
+        </include>
+
+        <include>
+            <uri>model://sun</uri>
+        </include>
+
+        <!-- Walls-->
+        
+        <include>
+            <uri>model://wall</uri>
+            <name>wall_1</name>
+            <pose>8.95 9 0 0 0 0</pose>
+        </include>
+
+        <light name='user_point_light_0' type='point'>
+            <pose frame=''>0.175067 -0.005194 1 0 -0 0</pose>
+            <diffuse>0.5 0.5 0.5 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <attenuation>
+              <range>20</range>
+              <constant>0.5</constant>
+              <linear>0.01</linear>
+              <quadratic>0.001</quadratic>
+            </attenuation>
+            <cast_shadows>0</cast_shadows>
+            <direction>0 0 -1</direction>
+        </light>
+
+    </world>
+</sdf>

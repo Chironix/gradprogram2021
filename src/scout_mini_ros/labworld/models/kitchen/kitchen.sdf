@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<sdf version="1.4">
+    <model name="kitchen">
+        <static>true</static>
+        <link name="kitchen_link">
+
+            <visual name="kitchen_mesh">
+                <geometry>
+                    <mesh>
+                        <uri>model://kitchen/meshes/model.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+
+            <collision name="kitchen_collison">
+                <pose> 0.314579 1.453198 1.002276 0 0 0</pose>
+                <geometry>
+                    <box>
+                        <size>0.645873 1.526240 2.004440</size>
+                    </box>
+                </geometry>
+            </collision>
+
+        </link>
+    </model>
+</sdf>
