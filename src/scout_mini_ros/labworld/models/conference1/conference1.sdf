@@ -14,10 +14,10 @@
             </visual>
 
             <collision name="conference1_collison">
-                <pose>0 0 1</pose>
+                <pose>2.074007 0.676444 0.500000</pose>
                 <geometry>
                     <box>
-                        <size>6.034290 0.105044 2.00</size>
+                        <size>4.08 2.5 1.198</size>
                     </box>
                 </geometry>
             </collision>
