@@ -23,16 +23,16 @@
             </collision>
 
             <collision name="walls_collison_2">
-                <pose>19.5 -17.95 1 0 0 1.5707</pose>
+                <pose>18 -17.95 1 0 0 1.5707</pose>
                 <geometry>
                     <box>
-                        <size>0.1 39 2.00</size>
+                        <size>0.1 36 2.00</size>
                     </box>
                 </geometry>
             </collision>
 
             <collision name="walls_collison_3">
-                <pose>38.95 -7.4 1 0 0 0</pose>
+                <pose>35.95 -7.4 1 0 0 0</pose>
                 <geometry>
                     <box>
                         <size>0.1 21 2.00</size>
@@ -41,10 +41,10 @@
             </collision>
 
             <collision name="walls_collison_4">
-                <pose>22.5 3.05 1 0 0 1.5707</pose>
+                <pose>21 3.05 1 0 0 1.5707</pose>
                 <geometry>
                     <box>
-                        <size>0.1 33 2.00</size>
+                        <size>0.1 30 2.00</size>
                     </box>
                 </geometry>
             </collision>
@@ -59,7 +59,7 @@
             </collision>
 
             <collision name="walls_collison_6">
-                <pose>14.9 17.95 1 0 0 1.5707</pose>
+                <pose>15 17.95 1 0 0 1.5707</pose>
                 <geometry>
                     <box>
                         <size>0.1 30 2.00</size>
@@ -140,7 +140,7 @@
             </collision>
 
             <collision name="walls_collison_15">
-                <pose>22.45 -14.9 1 0 0 0</pose>
+                <pose>21.45 -14.9 1 0 0 0</pose>
                 <geometry>
                     <box>
                         <size>0.1 6 2.00</size>
@@ -149,7 +149,7 @@
             </collision>
 
             <collision name="walls_collison_16">
-                <pose>27.95 -14.9 1 0 0 0</pose>
+                <pose>26.95 -14.9 1 0 0 0</pose>
                 <geometry>
                     <box>
                         <size>0.1 6 2.00</size>
@@ -176,7 +176,7 @@
             </collision>
 
             <collision name="walls_collison_19">
-                <pose>35.9 -10.95 1 0 0 1.5707</pose>
+                <pose>32.9 -10.95 1 0 0 1.5707</pose>
                 <geometry>
                     <box>
                         <size>0.1 6 2.00</size>
@@ -212,7 +212,7 @@
             </collision>
 
             <collision name="walls_collison_23">
-                <pose>24 -11.95 1 0 0 1.5707</pose>
+                <pose>23 -11.95 1 0 0 1.5707</pose>
                 <geometry>
                     <box>
                         <size>0.1 3 2.00</size>
@@ -221,7 +221,7 @@
             </collision>
 
             <collision name="walls_collison_24">
-                <pose>32.95 -12.5 1 0 0 0</pose>
+                <pose>29.95 -12.5 1 0 0 0</pose>
                 <geometry>
                     <box>
                         <size>0.1 3 2.00</size>
