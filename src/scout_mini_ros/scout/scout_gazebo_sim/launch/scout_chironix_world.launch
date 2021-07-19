@@ -23,8 +23,6 @@
         <arg name="model" value="$(arg model)" />
     </include>
 
-    <include file="$(find scout_base)/launch/scout_base_sim.launch">
-    </include>
 
     <node name="rviz" pkg="rviz" type="rviz" args="-d $(find scout_description)/rviz/scout_mini_nav_stack.rviz" />
 </launch>
