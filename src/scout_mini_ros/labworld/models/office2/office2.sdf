@@ -14,10 +14,10 @@
             </visual>
 
             <collision name="office2_collison">
-                <pose>0 0 1</pose>
+                <pose>-0.907978 0.081591 0.657955</pose>
                 <geometry>
                     <box>
-                        <size>6.034290 0.105044 2.00</size>
+                        <size>1.6255 1.9218 1.3512</size>
                     </box>
                 </geometry>
             </collision>

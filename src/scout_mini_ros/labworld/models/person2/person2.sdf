@@ -14,10 +14,10 @@
             </visual>
 
             <collision name="person2_collison">
-                <pose>0 0 1</pose>
+                <pose>0 0.1 1</pose>
                 <geometry>
                     <box>
-                        <size>6.034290 0.105044 2.00</size>
+                        <size>0.5925 0.1 2.0</size>
                     </box>
                 </geometry>
             </collision>

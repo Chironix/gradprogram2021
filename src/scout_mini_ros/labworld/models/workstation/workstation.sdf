@@ -14,10 +14,10 @@
             </visual>
 
             <collision name="workstation_collison">
-                <pose>0 0 1</pose>
+                <pose>0.888619 -0.527143 1.137592</pose>
                 <geometry>
                     <box>
-                        <size>6.034290 0.105044 2.00</size>
+                        <size>1.94056 1.19541 2.28878</size>
                     </box>
                 </geometry>
             </collision>
