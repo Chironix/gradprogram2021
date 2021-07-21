@@ -1,0 +1,9 @@
+<launch>
+    <env name="GAZEBO_MODEL_PATH" value="$(find labworld)/models:$(optenv GAZEBO_MODEL_PATH)" />
+    <env name="GAZEBO_RESOURCE_PATH" value="$(find labworld)/worlds:$(optenv GAZEBO_RESOURCE_PATH)" />
+    
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="$(find labworld)/worlds/chironix.world"/>
+    </include>
+
+</launch>

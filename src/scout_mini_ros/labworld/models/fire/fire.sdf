@@ -14,10 +14,10 @@
             </visual>
 
             <collision name="fire_collison">
-                <pose>0 0 1</pose>
+                <pose>0.127737 0.053782 0.334999</pose>
                 <geometry>
                     <box>
-                        <size>6.034290 0.105044 2.00</size>
+                        <size>0.25 0.25 0.6709</size>
                     </box>
                 </geometry>
             </collision>

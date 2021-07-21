@@ -2,344 +2,34 @@
 
 <sdf version="1.4">
     <world name="chironix">
-        <include>
-            <uri>model://ground_plane</uri>
-        </include>
+
 
         <include>
             <uri>model://sun</uri>
         </include>
 
-        <!-- Walls-->
-        
+        <!-- Wrold Params-->
+        <physics name='default_physics' default='0' type='ode'>
+            <real_time_factor>0.25</real_time_factor>
+            <real_time_update_rate>250</real_time_update_rate>
+        </physics>
+        <scene>
+            <ambient>0.4 0.4 0.4 1</ambient>
+            <background>0.7 0.7 0.7 1</background>
+            <shadows>0</shadows>
+        </scene>
+
         <include>
-            <uri>model://wall</uri>
-            <name>wall_1</name>
-            <pose>8.95 9 0 0 0 0</pose>
-        </include>
-        
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_2</name>
-            <pose>2.95 9 0 0 0 0</pose>
-        </include>
-        
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_3</name>
-            <pose>0 6 0 0 0 1.5707</pose>
+            <uri>model://walls</uri>
+            <name>all_Walls</name>
+            <pose>0.05 -9 0 0 0 0</pose>
         </include>
 
         <include>
-            <uri>model://wall</uri>
-            <name>wall_4</name>
-            <pose>0 0 0 0 0 1.570700</pose>
+            <uri>model://floor</uri>
+            <name>floor</name>
+            <pose>0.05 -9 -0.1 0 0 0</pose>
         </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_5</name>
-            <pose>0 -6 0 0 0 1.5707</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_6</name>
-            <pose>0 -12 0 0 0 1.5707</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_7</name>
-            <pose>0 -18 0 0 0 1.5707</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_8</name>
-            <pose>6 -15 0 0 0 1.5707</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_9</name>
-            <pose>9 -12.05 0 0 0 0</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_10</name>
-            <pose>11.95 -9 0 0 0 1.5707</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_11</name>
-            <pose>9 -6.05 0 0 0 0</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_12</name>
-            <pose>6.05 -3 0 0 0 1.5707</pose>
-        </include>
-
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_13</name>
-            <pose>11.95 -3 0 0 0 1.5707</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_14</name>
-            <pose>14.95 9 0 0 0 0</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_15</name>
-            <pose>17.9 5.95 0 0 0 1.5707</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_16</name>
-            <pose>20.95 9 0 0 0 0</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_17</name>
-            <pose>26.95 9 0 0 0 0</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_18</name>
-            <pose>29.9 5.95 0 0 0 1.5707</pose>
-        </include>
-        
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_19</name>
-            <pose>15 -6.05 0 0 0 0</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_20</name>
-            <pose>17.9 -3 0 0 0 1.5707</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_21</name>
-            <pose>20.90 -6.05 0 0 0 0</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_22</name>
-            <pose>29.9 0 0 0 0 1.5707</pose>
-        </include>
-
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_23</name>
-            <pose>17.9 -9 0 0 0 1.5707</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_24</name>
-            <pose>20.85 -12 0 0 0 0</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_25</name>
-            <pose>23.85 -9 0 0 0 1.5707</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_26</name>
-            <pose>23.85 -15 0 0 0 1.5707</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_27</name>
-            <pose>32.95 -6.05 0 0 0 0</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_28</name>
-            <pose>36 -9 0 0 0 1.5707</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_29</name>
-            <pose>36 -15 0 0 0 1.5707</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_30</name>
-            <pose>0 -24 0 0 0 1.5707</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_31</name>
-            <pose>2.95 -27 0 0 0 0</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_32</name>
-            <pose>36 -18.05 0 0 0 1.5707</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_33</name>
-            <pose>5.9 -24 0 0 0 1.5707</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_34</name>
-            <pose>8.9 -27 0 0 0 0</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_35</name>
-            <pose>14.9 -27 0 0 0 0</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_36</name>
-            <pose>20.9 -27 0 0 0 0</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_37</name>
-            <pose>26.9 -27 0 0 0 0</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_37</name>
-            <pose>26.9 -27 0 0 0 0</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_38</name>
-            <pose>28.91 -27 0 0 0 0</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_39</name>
-            <pose>21.5 -24 0 0 0 1.5707</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_40</name>
-            <pose>33 -27 0 0 0 0</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_41</name>
-            <pose>36 -24.05 0 0 0 1.5707</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_42</name>
-            <pose>26.85 -6.05 0 0 0 0</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_43</name>
-            <pose>29.9 -3.1 0 0 0 1.5707</pose>
-        </include>
-
-        <include>
-            <uri>model://smallWall</uri>
-            <name>wall_44</name>
-            <pose>4.35 -23 0 0 0 0</pose>
-        </include>
-
-        <include>
-
-            <uri>model://smallWall</uri>
-            <name>wall_45</name>
-            <pose>13.5 -0.05 0 0 0 0</pose>
-        </include>
-
-        <include>
-            <uri>model://smallWall</uri>
-            <name>wall_46</name>
-            <pose>30.05 -21.5 0 0 0 1.5707</pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_47</name>
-            <pose>33 -20 0 0 0 0</pose>
-        </include>
-
-        <include>
-            <uri>model://smallWall</uri>
-            <name>wall_48</name>
-            <pose>26.85 -7.6 0 0 0 1.5707</pose>
-        </include>
-
-        <include>
-            <uri>model://smallWall</uri>
-            <name>wall_49</name>
-            <pose>25.4 -11.4 0 0 0 0 </pose>
-        </include>
-
-        <include>
-            <uri>model://smallWall</uri>
-            <name>wall_50</name>
-            <pose>1.55 -18.5 0 0 0 0 </pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_51</name>
-            <pose>3 -9 0 0 0 0 </pose>
-        </include>
-
-        <include>
-            <uri>model://wall</uri>
-            <name>wall_52</name>
-            <pose>27 -24 0 0 0 1.5707 </pose>
-        </include>
-
-        <include>
-            <uri>model://smallWall</uri>
-            <name>wall_53</name>
-            <pose>23 -21.05 0 0 0 0 </pose>
-        </include>
-    
-        <!-- Walls End-->
 
         <!-- Left Half of Lab-->
         <include>
@@ -351,13 +41,13 @@
         <include>
             <uri>model://fire</uri>
             <name>lab_fire</name>
-            <pose>6 -0.5 0.25 0 0 1.5707</pose>
+            <pose>6.05 -0.5 0.25 0 0 1.5707</pose>
         </include> 
         
         <include>
             <uri>model://fire</uri>
             <name>workshop_fire</name>
-            <pose>18.12 -0.5 0.25 0 0 1.5707</pose>
+            <pose>18.05 -0.5 0.25 0 0 1.5707</pose>
         </include> 
 
         <include>
@@ -501,43 +191,43 @@
         <include>
             <uri>model://drawer</uri>
             <name>drawer_1</name>
-            <pose>7.55 -2 0 0 0 -1.5707</pose>
+            <pose>7.6 -2 0 0 0 -1.5707</pose>
         </include>
 
         <include>
             <uri>model://drawer</uri>
             <name>drawer_2</name>
-            <pose>7.55 -1.5 0 0 0 -1.5707</pose>
+            <pose>7.6 -1.5 0 0 0 -1.5707</pose>
         </include>
 
         <include>
             <uri>model://drawer</uri>
             <name>drawer_3</name>
-            <pose>7.55 -1 0 0 0 -1.5707</pose>
+            <pose>7.6 -1 0 0 0 -1.5707</pose>
         </include>
 
         <include>
             <uri>model://drawer</uri>
             <name>drawer_4</name>
-            <pose>7.55 -0.5 0 0 0 -1.5707</pose>
+            <pose>7.6 -0.5 0 0 0 -1.5707</pose>
         </include>
 
         <include>
             <uri>model://drawer</uri>
             <name>drawer_5</name>
-            <pose>7.55 0 0 0 0 -1.5707</pose>
+            <pose>7.6 0 0 0 0 -1.5707</pose>
         </include>
 
         <include>
             <uri>model://drawer</uri>
             <name>drawer_6</name>
-            <pose>7.55 0.5   0 0 0 -1.5707</pose>
+            <pose>7.6 0.5   0 0 0 -1.5707</pose>
         </include>
         
         <include>
             <uri>model://shelf1</uri>
             <name>shelf1_1</name>
-            <pose>7.24 -3   0 0 0 -1.5707</pose>
+            <pose>7.3 -3   0 0 0 -1.5707</pose>
         </include>  
 
         <include>
@@ -677,13 +367,13 @@
 
         <include>
             <uri>model://workstation</uri>
-            <name>workstation_1</name>
+            <name>workstation_2</name>
             <pose>13.90000 -4.8 0 0 0 0</pose>
         </include> 
 
         <include>
             <uri>model://workstation</uri>
-            <name>workstation_1</name>
+            <name>workstation_3</name>
             <pose>15.75 -4.8 0 0 0 0</pose>
         </include> 
 
@@ -729,7 +419,7 @@
 
         <include>
             <uri>model://kitchen</uri>
-            <name>kitchen_1</name>
+            <name>kitchen_2</name>
             <pose>14.4 -26.95 0 0 0 1.5707</pose>
         </include> 
 
@@ -854,7 +544,7 @@
 
         <include>
             <uri>model://office2</uri>
-            <name>office_4</name>
+            <name>office_5</name>
             <pose>25.6 -14 0 0 0 0</pose>
         </include> 
 
@@ -917,6 +607,67 @@
             <uri>model://conference1</uri>
             <name>conference_2</name>
             <pose>22.8 -25.5 0 0 0 0</pose>
+        </include>
+
+        <!-- Tags-->
+        <include>
+            <uri>model://marker0</uri>
+            <name>tag_0</name>
+            <pose>22 8.9 0.55 0 0 1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://marker1</uri>
+            <name>tag_1</name>
+            <pose>14 0 0.55 0 0 1.5707</pose>
+        </include>
+        
+        <include>
+            <uri>model://marker2</uri>
+            <name>tag_2</name>
+            <pose>11.95 -1.5 0.55 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://marker3</uri>
+            <name>tag_3</name>
+            <pose>5.57 -5 0.55 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://marker4</uri>
+            <name>tag_4</name>
+            <pose>4 -22.85 0.55 0 0 1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://marker5</uri>
+            <name>tag_5</name>
+            <pose>16 -26.9 0.55 0 0 1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://marker6</uri>
+            <name>tag_6</name>
+            <pose>18.05 -10 0.55 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://marker7</uri>
+            <name>tag_7</name>
+            <pose>21.45 -25 0.55 0 0 0</pose>
+        </include>
+
+        <include>
+            <uri>model://marker8</uri>
+            <name>tag_8</name>
+            <pose>30 -26.9 0.55 0 0 1.5707</pose>
+        </include>
+
+        <include>
+            <uri>model://marker9</uri>
+            <name>tag_9</name>
+            <pose>35.95 -17 0.55 0 0 0</pose>
         </include>
 
     </world>

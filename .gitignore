@@ -49,7 +49,6 @@ qtcreator-*
 
 # Catkin custom files
 CATKIN_IGNORE
-.catkin_workspace
 
 #commit message file
 message.txt

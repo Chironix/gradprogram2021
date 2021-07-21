@@ -14,10 +14,10 @@
             </visual>
 
             <collision name="decore1_collison">
-                <pose>0 0 1</pose>
+                <pose>1.619921 0.116622 1.467504</pose>
                 <geometry>
                     <box>
-                        <size>6.034290 0.105044 2.00</size>
+                        <size>1.76338 0.35 1.00</size>
                     </box>
                 </geometry>
             </collision>
