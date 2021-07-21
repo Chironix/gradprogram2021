@@ -53,9 +53,12 @@
     <child link="rear_upper_camera_mount" />
   </joint>
 
-  <xacro:pointgrey_flea3 frame="rear_upper_camera" name="rear_upper"
+  <!-- <xacro:pointgrey_flea3 frame="rear_upper_camera" name="rear_upper"
     camera_x="0.0754" camera_y="0.029" camera_z="0.035"
-    camera_mass="0.085" hfov="1.0471975512" fps="60" width="640" height="512"/>
+    camera_mass="0.085" hfov="1.0471975512" fps="60" width="640" height="512"/> -->
+    <xacro:sensor_d435 name="d435" parent="base_link">
+    <origin xyz="0.19 0 0.06" rpy="0 0 0"/>
+  </xacro:sensor_d435>
   <joint name="rear_upper_camera_bracket_joint" type="fixed">
     <origin xyz="0.020 0 0.0245" rpy="0 0 0" />
     <parent link="rear_upper_camera_beam" />

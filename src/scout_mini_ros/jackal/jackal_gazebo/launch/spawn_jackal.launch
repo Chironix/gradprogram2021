@@ -1,9 +1,9 @@
 <launch>
-  <arg name="x" default="0" />
-  <arg name="y" default="0" />
-  <arg name="z" default="1" />
+  <arg name="x" default="2.0" />
+  <arg name="y" default="0.0" />
+  <arg name="z" default="0.0" />
   <arg name="yaw" default="0" />
-  <arg name="joystick" default="true" />
+  <arg name="joystick" default="false" />
 
   <!-- Configuration of Jackal which you would like to simulate.
        See jackal_description for details. -->
@@ -21,4 +21,11 @@
   <!-- Spawn Jackal -->
   <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model"
 	      args="-urdf -model jackal -param robot_description -x $(arg x) -y $(arg y) -z $(arg z) -R 0 -P 0 -Y $(arg yaw)" />
+
+  <node pkg="pointcloud_to_laserscan" type="pointcloud_to_laserscan_node" name="velodyne_to_laserscan" output="screen">
+    <remap from="cloud_in" to="/velodyne_points"/>
+    <remap from="scan" to="scan"/>
+  </node>
+
+
 </launch>

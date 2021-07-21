@@ -52,3 +52,6 @@ CATKIN_IGNORE
 
 #commit message file
 message.txt
+
+#vscode
+.vscode

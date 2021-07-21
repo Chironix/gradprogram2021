@@ -1,10 +1,6 @@
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Changelog for package jackal_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-0.7.6 (2021-07-18)
-------------------
-* cpr urdf extras
-* Contributors: Ebrahim Shahrivar
 
 0.7.5 (2021-03-24)
 ------------------
