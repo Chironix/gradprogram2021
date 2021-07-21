@@ -5,30 +5,6 @@
   <xacro:include filename="$(find realsense2_description)/urdf/_d435.urdf.xacro" />
   <xacro:include filename="$(find velodyne_description)/urdf/VLP-16.urdf.xacro"/>
 
-  <!-- <link name="os_sensor" /> -->
-  <!-- <link name="usb_cam"/> -->
-  <!-- <link name="d435_link" /> -->
-
-  <!-- t265 -->
-  <link name="t265_pose_frame">
-    <visual>
-      <!-- still need to check if the actual output, if the rotation is just visual or... -->
-      <origin xyz="0 0 0.0" rpy="1.5708 0 0" />
-      <geometry>
-        <mesh filename="package://realsense2_description/meshes/t265.stl" />
-      </geometry>
-      <material name="aluminum">
-        <color rgba="0.5 0.5 0.5 1" />
-      </material>
-    </visual>
-  </link>
-
-  <joint name="cam_link_t265" type="fixed">
-    <origin xyz="0.18 0 0.10" rpy="0 0 0" />
-    <parent link="base_link" />
-    <child link="t265_pose_frame" />
-  </joint>
-
   <xacro:sensor_d435 name="d435" parent="base_link">
     <origin xyz="0.19 0 0.06" rpy="0 0 0"/>
   </xacro:sensor_d435>
