@@ -180,14 +180,14 @@ Visualization Manager:
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
-        Max Value: 0.5467267036437988
-        Min Value: -0.19784405827522278
+        Max Value: 2.0000033378601074
+        Min Value: -6.258487701416016e-6
         Value: true
       Axis: Z
       Channel Name: intensity
       Class: rviz/PointCloud2
       Color: 255; 255; 255
-      Color Transformer: RGB8
+      Color Transformer: AxisColor
       Decay Time: 0
       Enabled: true
       Invert Rainbow: false
@@ -199,7 +199,7 @@ Visualization Manager:
       Position Transformer: XYZ
       Queue Size: 10
       Selectable: true
-      Size (Pixels): 3
+      Size (Pixels): 1
       Size (m): 0.009999999776482582
       Style: Points
       Topic: /camera/depth/color/points
@@ -210,8 +210,8 @@ Visualization Manager:
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
-        Max Value: 0.5308908224105835
-        Min Value: -0.2346803992986679
+        Max Value: 1.999189019203186
+        Min Value: -0.0059788525104522705
         Value: true
       Axis: Z
       Channel Name: intensity
@@ -265,25 +265,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 3.5671231746673584
+      Distance: 14.687979698181152
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.4866458475589752
-        Y: -0.1382569968700409
-        Z: 0.06691689044237137
+        X: 1.3503241539001465
+        Y: 0.8055566549301147
+        Z: 0.8619615435600281
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.5447957515716553
+      Pitch: 0.8547958135604858
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 4.27542781829834
+      Yaw: 5.115437984466553
     Saved: ~
 Window Geometry:
   Displays:
