@@ -26,4 +26,11 @@
           concurrency_level: 1
       </rosparam>
   </node>
+  
+  <node pkg="pointcloud_to_laserscan" type="pointcloud_to_laserscan_node" name="velodyne_to_laserscan" output="screen">
+
+    <remap from="cloud_in" to="/velodyne_points"/>
+    <remap from="scan" to="scan"/>
+  </node>
+
 </launch>

@@ -2,11 +2,6 @@
 Changelog for package husky_bringup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.4.5 (2020-10-01)
-------------------
-* Fix a bug where the UM7 and UM6 launch files don't work when installed to /etc/ros/*/ros.d; they fail to find the mag config files.
-* Contributors: Chris Iverach-Brereton
-
 0.4.4 (2020-08-13)
 ------------------
 * Set default for optenv HUSKY_MAG_CONFIG
