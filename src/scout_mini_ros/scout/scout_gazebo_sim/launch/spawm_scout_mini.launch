@@ -1,8 +1,8 @@
 <launch>
     <!-- initial pose -->
-    <arg name="x" default="0.0"/>
+    <arg name="x" default="2.0"/>
     <arg name="y" default="0.0"/>
-    <arg name="z" default="0.0"/>
+    <arg name="z" default="0.1"/>
     <arg name="yaw" default="0.0"/>
 
     <arg name="robot_namespace" default="/"/>
@@ -13,7 +13,10 @@
     <arg name="gui" default="true" />
     <arg name="headless" default="false" />
     <arg name="debug" default="true" />
+    <arg name="model" default="$(find realsense2_description)/urdf/test_d435_camera.urdf.xacro"/>
 
+    <param name="robot_description" command="$(find xacro)/xacro $(arg model)" />
+    
     <include file="$(find scout_description)/launch/scout_mini_stock.launch">
         <arg name="robot_namespace" value="$(arg robot_namespace)" />
     </include>
@@ -34,7 +37,9 @@
     <node name="scout_mini_controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" args="scout_state_controller scout_motor_fr_controller scout_motor_fl_controller scout_motor_rl_controller scout_motor_rr_controller"/>
     <node name="scout_mini_robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
 
-    <node name="scout_skid_steer_controller" pkg="scout_gazebo_sim" type="scout_skid_steer_controller">
-        <param name="robot_namespace" type="string" value="$(arg robot_namespace)" />
-    </node>
+    <node pkg="pointcloud_to_laserscan" type="pointcloud_to_laserscan_node" name="velodyne_to_laserscan" output="screen">
+
+        <remap from="cloud_in" to="/velodyne_points"/>
+        <remap from="scan" to="scan"/>
+      </node>
 </launch>

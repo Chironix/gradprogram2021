@@ -1,135 +1,93 @@
-# Move Base specific params
-recovery_behavior_enabled: true
-recovery_behaviors: [
- {'name': 'conservative_reset', 'type': 'clear_costmap_recovery/ClearCostmapRecovery'},
-#  {'name': 'rotate_recovery', 'type': 'rotate_recovery/RotateRecovery'}
-]
-planner_frequency: 5.0
 controller_frequency: 5.0
-planner_patience: 1.0
-controller_patience: 1.0
+recovery_behaviour_enabled: true
 
-# Global planner
 NavfnROS:
   allow_unknown: true # Specifies whether or not to allow navfn to create plans that traverse unknown space.
   default_tolerance: 0.1 # A tolerance on the goal point for the planner.
-  planner_window_x: 30.0
-  planner_window_y: 30.0
 
-# Local planner
-DWAPlannerROS:
-  # Robot configuration parameters
-  holonomic_robot: false
-
-  acc_lim_x: 10.0
-  acc_lim_y: 0.0
-  acc_lim_th: 6.4
+TrajectoryPlannerROS:
+  # Robot Configuration Parameters
+  acc_lim_x: 2.5
+  acc_lim_theta:  3.2
 
   max_vel_x: 1.0
-  min_vel_x: -1.0
-  max_vel_y: 0
-  min_vel_y: 0
+  min_vel_x: 0.0
 
-  max_trans_vel: 1.0
-  min_trans_vel: 0.05
-  max_rot_vel: 1.8
-  min_rot_vel: 0.1
+  max_vel_theta: 1.0
+  min_vel_theta: -1.0
+  min_in_place_vel_theta: 0.2
+
+  holonomic_robot: false
+  escape_vel: -0.1
 
   # Goal Tolerance Parameters
-  yaw_goal_tolerance: 0.3
-  xy_goal_tolerance: 0.3
+  yaw_goal_tolerance: 0.1
+  xy_goal_tolerance: 0.2
   latch_xy_goal_tolerance: false
 
   # Forward Simulation Parameters
   sim_time: 2.0
   sim_granularity: 0.02
-  vx_samples: 10
-  vy_samples: 0
+  angular_sim_granularity: 0.02
+  vx_samples: 6
   vtheta_samples: 20
-  penalize_negative_x: true
+  controller_frequency: 20.0
 
   # Trajectory scoring parameters
-  path_distance_bias: 15.0 # The weighting for how much the controller should stay close to the path it was given
-  goal_distance_bias: 10.0 # The weighting for how much the controller should attempt to reach its local goal, also controls speed
-  occdist_scale: 1.0 # The weighting for how much the controller should attempt to avoid obstacles
-  forward_point_distance: 0.5 # The distance from the center point of the robot to place an additional scoring point, in meters
-  stop_time_buffer: 0.1  # The amount of time that the robot must stop before a collision in order for a trajectory to be considered valid in seconds
-  scaling_speed: 0.3 # The absolute value of the velocity at which to start scaling the robot's footprint, in m/s
-  max_scaling_factor: 1.0 # The maximum factor to scale the robot's footprint by
+  meter_scoring: true # Whether the gdist_scale and pdist_scale parameters should assume that goal_distance and path_distance are expressed in units of meters or cells. Cells are assumed by default (false).
+  occdist_scale:  0.1 #The weighting for how much the controller should attempt to avoid obstacles. default 0.01
+  pdist_scale: 0.75  #     The weighting for how much the controller should stay close to the path it was given . default 0.6
+  gdist_scale: 1.0 #     The weighting for how much the controller should attempt to reach its local goal, also controls speed  default 0.8
+
+  heading_lookahead: 0.325  #How far to look ahead in meters when scoring different in-place-rotation trajectories
+  heading_scoring: false  #Whether to score based on the robot's heading to the path or its distance from the path. default false
+  heading_scoring_timestep: 0.8   #How far to look ahead in time in seconds along the simulated trajectory when using heading scoring (double, default: 0.8)
+  dwa: true #Whether to use the Dynamic Window Approach (DWA)_ or whether to use Trajectory Rollout
+  simple_attractor: false
+  publish_cost_grid_pc: true  
 
   # Oscillation Prevention Parameters
   oscillation_reset_dist: 0.25 #How far the robot must travel in meters before oscillation flags are reset (double, default: 0.05)
+  escape_reset_dist: 0.1
+  escape_reset_theta: 0.1
 
+DWAPlannerROS:
+  # Robot configuration parameters  
+  acc_lim_x: 2.5
+  acc_lim_y: 0
+  acc_lim_th: 3.2
 
-# # Local planner
-# TebLocalPlannerROS:
-#   odom_topic: /h2/odometry/filtered
-#   map_frame: /map
+  max_vel_x: 0.5
+  min_vel_x: 0.0
+  max_vel_y: 0
+  min_vel_y: 0
 
-#   # Trajectory
-#   teb_autosize: True
-#   dt_ref: 0.3
-#   dt_hysteresis: 0.1
-#   global_plan_overwrite_orientation: True
-#   max_global_plan_lookahead_dist: 3.0
-#   feasibility_check_no_poses: 5
+  max_trans_vel: 0.5
+  min_trans_vel: 0.1
+  max_rot_vel: 1.0
+  min_rot_vel: 0.2
 
-#   # Robot
-#   max_vel_x: 0.8
-#   max_vel_x_backwards: 0.8
-#   max_vel_theta: 1.8
-#   acc_lim_x: 2.5
-#   acc_lim_theta: 3.2
-#   min_turning_radius: 0.0
-#   footprint_model: # types: "point", "circular", "two_circles", "line", "polygon"
-#     type: "polygon"
-#     vertices: [[-0.5, -0.33], [-0.5, 0.33], [0.5, 0.33], [0.5, -0.33]]
-    
-#   # Goal Tolerance
-#   xy_goal_tolerance: 0.5
-#   yaw_goal_tolerance: 0.1
-#   free_goal_vel: False
+  # Goal Tolerance Parameters
+  yaw_goal_tolerance: 0.1
+  xy_goal_tolerance: 0.2
+  latch_xy_goal_tolerance: false
 
-#   # Obstacles
-#   min_obstacle_dist: 0.4      # Minimum desired separation from obstacles in meters
-#   inflation_dist: 1.0
-#   include_costmap_obstacles: True
-#   costmap_obstacles_behind_robot_dist: 5.0
-#   obstacle_poses_affected: 30
-#   costmap_converter_plugin: ""
-#   costmap_converter_spin_thread: True
-#   costmap_converter_rate: 5
+  # # Forward Simulation Parameters
+  # sim_time: 2.0
+  # sim_granularity: 0.02
+  # vx_samples: 6
+  # vy_samples: 0
+  # vtheta_samples: 20
+  # penalize_negative_x: true
 
-#   # Optimization
-#   no_inner_iterations: 4
-#   no_outer_iterations: 3
-#   optimization_activate: True
-#   optimization_verbose: False
-#   penalty_epsilon: 0.1
-#   weight_max_vel_x: 2
-#   weight_max_vel_theta: 1
-#   weight_acc_lim_x: 1
-#   weight_acc_lim_theta: 1
-#   weight_kinematics_nh: 1000
-#   weight_kinematics_forward_drive: 10   # how much to incentivise forward driving
-#   weight_kinematics_turning_radius: 1
-#   weight_optimaltime: 1
-#   weight_obstacle: 50
-#   weight_dynamic_obstacle: 10 # not in use yet
-#   selection_alternative_time_cost: False
+  # # Trajectory scoring parameters
+  # path_distance_bias: 32.0 # The weighting for how much the controller should stay close to the path it was given
+  # goal_distance_bias: 24.0 # The weighting for how much the controller should attempt to reach its local goal, also controls speed
+  # occdist_scale: 0.01 # The weighting for how much the controller should attempt to avoid obstacles
+  # forward_point_distance: 0.325 # The distance from the center point of the robot to place an additional scoring point, in meters
+  # stop_time_buffer: 0.2  # The amount of time that the robot must stThe absolute value of the veolicty at which to start scaling the robot's footprint, in m/sop before a collision in order for a trajectory to be considered valid in seconds
+  # scaling_speed: 0.25 # The absolute value of the veolicty at which to start scaling the robot's footprint, in m/s
+  # max_scaling_factor: 0.2 # The maximum factor to scale the robot's footprint by
 
-#   # Homotopy Class Planner
-#   enable_homotopy_class_planning: True
-#   enable_multithreading: True
-#   simple_exploration: False
-#   max_number_classes: 4
-#   roadmap_graph_no_samples: 15
-#   roadmap_graph_area_width: 5
-#   h_signature_prescaler: 0.5
-#   h_signature_threshold: 0.1
-#   obstacle_keypoint_offset: 0.1
-#   obstacle_heading_threshold: 0.45
-#   visualize_hc_graph: False
-
-#   # Debugging
-#   # publish_feedback: True
+  # # Oscillation Prevention Parameters
+  # oscillation_reset_dist: 0.25 #How far the robot must travel in meters before oscillation flags are reset (double, default: 0.05)
