@@ -8,12 +8,17 @@ Panels:
         - /Status1
         - /TF1/Frames1
         - /TF1/Tree1
+        - /Navigation1
+        - /Navigation1/Exploration1        
       Splitter Ratio: 0.5
     Tree Height: 486
   - Class: rviz/Selection
     Name: Selection
   - Class: rviz/Tool Properties
-    Expanded: ~
+    Expanded: 
+      - /2D Pose Estimate1
+      - /2D Nav Goal1
+      - /Publish Point1    
     Name: Tool Properties
     Splitter Ratio: 0.588679
   - Class: rviz/Views
@@ -25,7 +30,7 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: ""
+    SyncSource: LaserScan
 Visualization Manager:
   Class: ""
   Displays:
