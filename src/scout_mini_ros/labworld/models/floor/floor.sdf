@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+
+<sdf version="1.4">
+    <model name="floor">
+        <static>true</static>
+        <link name="floor_link">
+
+            <visual name="floor_mesh">
+                <geometry>
+                    <mesh>
+                        <uri>model://floor/meshes/model.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+
+            <collision name="floor_collison">
+                <pose>18 0 0.05</pose>
+                <geometry>
+                    <box>
+                        <size>36 36 0.1</size>
+                    </box>
+                </geometry>
+            </collision>
+        </link>
+    </model>
+</sdf>
