@@ -2,7 +2,7 @@
     <!-- initial pose -->
     <arg name="x" default="2.0"/>
     <arg name="y" default="0.0"/>
-    <arg name="z" default="0.0"/>
+    <arg name="z" default="0.1"/>
     <arg name="yaw" default="0.0"/>
 
     <arg name="robot_namespace" default="/"/>
@@ -37,4 +37,9 @@
     <node name="scout_mini_controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" args="scout_state_controller scout_motor_fr_controller scout_motor_fl_controller scout_motor_rl_controller scout_motor_rr_controller"/>
     <node name="scout_mini_robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
 
+    <node pkg="pointcloud_to_laserscan" type="pointcloud_to_laserscan_node" name="velodyne_to_laserscan" output="screen">
+
+        <remap from="cloud_in" to="/velodyne_points"/>
+        <remap from="scan" to="scan"/>
+      </node>
 </launch>
