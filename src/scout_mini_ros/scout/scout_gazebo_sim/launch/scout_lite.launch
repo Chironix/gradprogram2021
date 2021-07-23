@@ -1,6 +1,7 @@
+<?xml version="1.0"?>
 <launch>
     <!-- Launch World -->
-    <include file="$(find timed_roslaunch)/timed_roslaunch.launch">
+    <include file="$(find timed_roslaunch)/launch/timed_roslaunch.launch">
       <arg name="time" value="0" />
       <arg name="pkg" value="labworld" />
       <arg name="file" value="liteWorld.launch" />
@@ -16,14 +17,14 @@
 
 
     <!-- Launch Rviz-->
-    <include file="$(find timed_roslaunch)/timed_roslaunch.launch">
+    <include file="$(find timed_roslaunch)/launch/timed_roslaunch.launch">
       <arg name="time" value="10" />
       <arg name="pkg" value="scout_gazebo_sim" />
       <arg name="file" value="scout_rviz.launch" />
     </include>
 
     <!-- Launch Movebase-->
-    <include file="$(find timed_roslaunch)/timed_roslaunch.launch">
+    <include file="$(find timed_roslaunch)/launch/timed_roslaunch.launch">
       <arg name="time" value="30" />
       <arg name="pkg" value="scout_navigation" />
       <arg name="file" value="move_base.launch" />
