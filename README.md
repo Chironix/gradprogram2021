@@ -6,22 +6,22 @@
 This is the master repo for the Chironix 2021 Graduate Program's problem.
 
 # It Contains:
-    0. What's this even for?
-    1. The "Finders Keepers" problem
-    2. Some helpful notes, links and hints
-    3. Specifics about deployment (i.e your restrictions)
+    * The "Finders Keepers" problem
+    * Some helpful notes, links and hints
+    * Build Instructions
 
 
 ## How did I get here?
     * (www.chironix.com)[Go here.]
 
 ## FINDERS KEEPERS
-  * Students will create a robotic solution which can autonomously navigate the Chironix lab [An Environment unknown] to find specific objects[Known].
+  * Students will create a robotic solution which can autonomously navigate the Chironix lab [An Environment unknown] to find as many of the available April tags as possible.
   * Grading will be based on the following criteria:
       - Reliability of the solution - how often does it crash (program) and how often does it crash (the robot)
-      - Number of objects identified.
+      - Number of April tags identified.
       - Sophistication of object identification solutions (ML/Cameras/features etc)
       - Number of collisions with obstacles in the environment if any, and, unexplained behaviour vs explained behaviour
+      - Amount of time taken for the entire operation.
 
 ## NOTES:
   * Chironix will supply a gazebo environment for the appropriate platform.
