@@ -19,10 +19,10 @@ This is the master repo for the Chironix 2021 Graduate Program's problem.
 ## FINDERS KEEPERS
   * Students will create a robotic solution which can autonomously navigate the Chironix lab [An Environment unknown] to find specific objects[Known].
   * Grading will be based on the following criteria:
-      [] Reliability of the solution - how often does it crash (program) and how often does it crash (the robot)
-      [] Number of objects identified.
-      [] Sophistication of object identification solutions (ML/Cameras/features etc)
-      [] Number of collisions with obstacles in the environment if any, and, unexplained behaviour vs explained behaviour
+      - Reliability of the solution - how often does it crash (program) and how often does it crash (the robot)
+      - Number of objects identified.
+      - Sophistication of object identification solutions (ML/Cameras/features etc)
+      - Number of collisions with obstacles in the environment if any, and, unexplained behaviour vs explained behaviour
 
 ## CREEPY STALKER
   * Students will create a tracking solution for one robot to follow another robot - a dynamic task tracking and navigation task in an [Environment unknown] setting.
