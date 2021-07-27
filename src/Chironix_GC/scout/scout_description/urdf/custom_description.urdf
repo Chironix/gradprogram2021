@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+
+<robot name="accessories" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find realsense2_description)/urdf/_d435.urdf.xacro" />
+  <xacro:include filename="$(find velodyne_description)/urdf/VLP-16.urdf.xacro"/>
+
+  <xacro:sensor_d435 name="d435" parent="base_link">
+    <origin xyz="0.19 0 0.06" rpy="0 0 0"/>
+  </xacro:sensor_d435>
+
+  <!--Velodyne and Velodyne Interface -->
+  <link name="velodyne_mount"/>
+
+  <joint name="velodyne_mount_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="velodyne_mount"/>
+    <origin xyz="0.1 0 0.17" rpy="0 0 0"/>
+  </joint>
+  
+
+  <xacro:VLP-16 parent="velodyne_mount" name="velodyne" topic="/velodyne_points" hz="10" organize_cloud="true" samples="200" gpu="false">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </xacro:VLP-16>
+
+  <link name="gx5_link" />
+
+  <joint name="microstrain_joint" type="fixed">
+    <parent link="velodyne_mount"/>
+    <child link="gx5_link" />
+    <origin xyz="-0.015 0 -0.113" rpy="3.14159 0 0" />
+  </joint>
+
+  <link name="tracking_link" />
+   <joint name="tracking_joint" type="fixed">
+    <parent link="gx5_link"/>
+    <child link="tracking_link" />
+    <origin xyz="0 0 0" rpy="3.14159 0 0" />
+  </joint>
+
+ <!-- <link name="odom" /> -->
+
+
+ <gazebo>
+    <plugin name="imu_controller" filename="libhector_gazebo_ros_imu.so">
+      <robotNamespace>$(arg robot_namespace)</robotNamespace>
+      <updateRate>50.0</updateRate>
+      <bodyName>gx5_link</bodyName>
+      <topicName>imu</topicName>
+      <frameId>gx5_link</frameId>
+      <accelDrift>0.005 0.005 0.005</accelDrift>
+      <accelGaussianNoise>0.005 0.005 0.005</accelGaussianNoise>
+      <rateDrift>0.005 0.005 0.005 </rateDrift>
+      <rateGaussianNoise>0.005 0.005 0.005 </rateGaussianNoise>
+      <headingDrift>0.005</headingDrift>
+      <headingGaussianNoise>0.005</headingGaussianNoise>
+    </plugin>
+
+
+    <plugin name="p3d_base_controller" filename="libgazebo_ros_p3d.so">
+      <alwaysOn>true</alwaysOn>
+      <updateRate>50.0</updateRate>
+      <bodyName>base_link</bodyName>
+      <topicName>/odom</topicName>
+      <gaussianNoise>0.01</gaussianNoise>
+      <frameName>world</frameName>
+      <xyzOffsets>0 0 0</xyzOffsets>
+      <rpyOffsets>0 0 0</rpyOffsets>
+    </plugin>
+
+  </gazebo>
+
+
+</robot>

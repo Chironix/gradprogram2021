@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+
+<sdf version="1.4">
+    <model name="lounge1">
+        <static>true</static>
+        <link name="lounge1_link">
+
+            <visual name="lounge1_mesh">
+                <geometry>
+                    <mesh>
+                        <uri>model://lounge1/meshes/model.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+
+            <collision name="lounge1_collison">
+                <pose>1.092179 0.404665 0.374921</pose>
+                <geometry>
+                    <box>
+                        <size>2.2 0.814 0.782</size>
+                    </box>
+                </geometry>
+            </collision>
+        </link>
+    </model>
+</sdf>

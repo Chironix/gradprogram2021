@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+
+<sdf version="1.4">
+    <model name="smallTable1">
+        <static>true</static>
+        <link name="smallTable1_link">
+
+            <visual name="smallTable1_mesh">
+                <geometry>
+                    <mesh>
+                        <uri>model://smallTable1/meshes/model.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+
+            <collision name="smallTable1_collison">
+                <pose>0.800299 0.401553 0.384317</pose>
+                <geometry>
+                    <box>
+                        <size>1.6356 0.8 0.7284</size>
+                    </box>
+                </geometry>
+            </collision>
+        </link>
+    </model>
+</sdf>

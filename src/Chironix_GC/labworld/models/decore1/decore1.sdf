@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+
+<sdf version="1.4">
+    <model name="decore1">
+        <static>true</static>
+        <link name="decore1_link">
+
+            <visual name="decore1_mesh">
+                <geometry>
+                    <mesh>
+                        <uri>model://decore1/meshes/model.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+
+            <collision name="decore1_collison">
+                <pose>1.619921 0.116622 1.467504</pose>
+                <geometry>
+                    <box>
+                        <size>1.76338 0.35 1.00</size>
+                    </box>
+                </geometry>
+            </collision>
+        </link>
+    </model>
+</sdf>

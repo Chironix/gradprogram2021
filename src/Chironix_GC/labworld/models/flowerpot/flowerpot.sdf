@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+
+<sdf version="1.4">
+    <model name="flowerpot">
+        <static>true</static>
+        <link name="flowerpot_link">
+
+            <visual name="flowerpot_mesh">
+                <geometry>
+                    <mesh>
+                        <uri>model://flowerpot/meshes/model.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+
+            <collision name="flowerpot_collison">
+                <pose>0.603162 0.248783 0.590120</pose>
+                <geometry>
+                    <box>
+                        <size>1.201 0.531 1.168</size>
+                    </box>
+                </geometry>
+            </collision>
+        </link>
+    </model>
+</sdf>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<sdf version="1.4">
+    <model name="shelf">
+        <static>true</static>
+        <link name="shelf_link">
+
+            <visual name="shelf_mesh">
+                <geometry>
+                    <mesh>
+                        <uri>model://shelf/meshes/model.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+
+            <collision name="shelf_collison">
+                <pose>0.501637 0.130569 0.911112</pose>
+                <geometry>
+                    <box>
+                        <size>1.038850 0.268718 1.795460</size>
+                    </box>
+                </geometry>
+            </collision>
+
+        </link>
+    </model>
+</sdf>

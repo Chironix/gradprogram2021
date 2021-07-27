@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+
+<sdf version="1.4">
+    <model name="workstation">
+        <static>true</static>
+        <link name="workstation_link">
+
+            <visual name="workstation_mesh">
+                <geometry>
+                    <mesh>
+                        <uri>model://workstation/meshes/model.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+
+            <collision name="workstation_collison">
+                <pose>0.888619 -0.527143 1.137592</pose>
+                <geometry>
+                    <box>
+                        <size>1.94056 1.19541 2.28878</size>
+                    </box>
+                </geometry>
+            </collision>
+        </link>
+    </model>
+</sdf>

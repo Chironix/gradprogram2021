@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+
+<sdf version="1.4">
+    <model name="fire">
+        <static>true</static>
+        <link name="fire_link">
+
+            <visual name="fire_mesh">
+                <geometry>
+                    <mesh>
+                        <uri>model://fire/meshes/model.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+
+            <collision name="fire_collison">
+                <pose>0.127737 0.053782 0.334999</pose>
+                <geometry>
+                    <box>
+                        <size>0.25 0.25 0.6709</size>
+                    </box>
+                </geometry>
+            </collision>
+        </link>
+    </model>
+</sdf>

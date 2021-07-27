@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+
+<sdf version="1.4">
+    <model name="person2">
+        <static>true</static>
+        <link name="person2_link">
+
+            <visual name="person2_mesh">
+                <geometry>
+                    <mesh>
+                        <uri>model://person2/meshes/model.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+
+            <collision name="person2_collison">
+                <pose>0 0.1 1</pose>
+                <geometry>
+                    <box>
+                        <size>0.5925 0.1 2.0</size>
+                    </box>
+                </geometry>
+            </collision>
+        </link>
+    </model>
+</sdf>

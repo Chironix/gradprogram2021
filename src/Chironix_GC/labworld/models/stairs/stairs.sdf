@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<sdf version="1.4">
+    <model name="stairs">
+        <static>true</static>
+        <link name="stairs_link">
+
+            <visual name="stairs_mesh">
+                <geometry>
+                    <mesh>
+                        <uri>model://stairs/meshes/model.dae</uri>
+                    </mesh>
+                </geometry>
+            </visual>
+            <collision name="stairs_collison_1">
+                <pose>0.238379 0.751048 0.164364</pose>
+                <geometry>
+                    <box>
+                        <size>0.53303 1.61536 0.3225</size>
+                    </box>
+                </geometry>
+            </collision>
+            <collision name="stairs_collison_2">
+                <pose>1.714264 0.753984 1.418593 0 -0.535400 0</pose>
+                <geometry>
+                    <box>
+                        <size>3.5181 1.61536 1.20752</size>
+                    </box>
+                </geometry>
+            </collision>
+            <collision name="stairs_collison_3">
+                <pose>4.789570 0.757534 2.428105</pose>
+                <geometry>
+                    <box>
+                        <size>3.8412 1.61536 1.26256</size>
+                    </box>
+                </geometry>
+            </collision>
+
+        </link>
+    </model>
+</sdf>
