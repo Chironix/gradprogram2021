@@ -1,4 +1,7 @@
 # Solution Notes
+This is a basic solution to the Finders Keepers problem that makes use of `gmapping` for SLAM and `explore_lite` for frontier exploration.
+Other experiments were trialled, including using Voronoi path planning, and using Realsense laserscans for mapping to maximise wall coverage.
+The greedy frontier exploration method with Scout was found to be the most reliable and performant.
 ## Setup
 `apriltag_reader` depends on the [AprilTag library](https://github.com/AprilRobotics/apriltag).
 This will need to be cloned and built if not already installed, e.g.
