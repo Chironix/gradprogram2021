@@ -27,7 +27,7 @@ obstacles_laser:
 GlobalPlanner:
     cost_factor: 0.55
     neutral_cost: 66
-    lethal_cost: 253
+    lethal_cost: 245
 
 inflation:
     inflation_radius: 1.5

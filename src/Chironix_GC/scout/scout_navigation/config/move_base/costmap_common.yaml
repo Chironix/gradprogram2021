@@ -6,7 +6,7 @@ update_frequency: 4.0
 publish_frequency: 3.0
 transform_tolerance: 0.5
 
-lethal_cost: 253
+lethal_cost: 245
 neutral_cost: 66
 cost_factor: 0.55
 

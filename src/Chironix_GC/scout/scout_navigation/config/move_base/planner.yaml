@@ -2,16 +2,16 @@ controller_frequency: 5.0
 recovery_behaviour_enabled: true
 clearing_rotation_allowed: true
 
-recovery_behaviors:
-  - {name: conservative_reset, type: clear_costmap_recovery/ClearCostmapRecovery}
-  - {name: moveback_recovery, type: moveback_recovery/MoveBackRecovery}
-  - {name: aggressive_reset, type: clear_costmap_recovery/ClearCostmapRecovery}
+#recovery_behaviors:
+#  - {name: conservative_reset, type: clear_costmap_recovery/ClearCostmapRecovery}
+#  - {name: moveback_recovery, type: moveback_recovery/MoveBackRecovery}
+#  - {name: aggressive_reset, type: clear_costmap_recovery/ClearCostmapRecovery}
 
-moveback_recovery:
-    controller_frequency: 5.0
-    linear_vel_back:     -0.3
-    step_back_length:     1.0
-    step_back_timeout:    15.0
+#moveback_recovery:
+#    controller_frequency: 5.0
+#    linear_vel_back:     -0.3
+#    step_back_length:     1.0
+#    step_back_timeout:    15.0
 
 NavfnROS:
   allow_unknown: true # Specifies whether or not to allow navfn to create plans that traverse unknown space.
@@ -61,7 +61,7 @@ TrajectoryPlannerROS:
   # Oscillation Prevention Parameters
   oscillation_reset_dist: 0.25 #How far the robot must travel in meters before oscillation flags are reset (double, default: 0.05)
   escape_reset_dist: 0.1
-  escape_reset_theta: 0.1
+  escape_reset_theta: 0.2 #0.1
   #oscillation_timeout: 5.0
 
 DWAPlannerROS:
