@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>solutions</name>
+  <version>0.0.0</version>
+  <description>Solution to Chironix gradprogram2021 challenge</description>
+
+  <maintainer email="yiannismaxwell@gmail.com">Yiannis Maxwell</maintainer>
+
+
+  <license>TODO</license>
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>explore_lite</exec_depend>
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
+</package>

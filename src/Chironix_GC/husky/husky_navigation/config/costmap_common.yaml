@@ -11,6 +11,10 @@ resolution: 0.05
 obstacle_range: 5.5
 raytrace_range: 6.0
 
+cost_factor: 0.55
+neutral_cost: 66
+lethal_cost: 253
+
 #layer definitions
 static:
     map_topic: /map
@@ -20,5 +24,11 @@ obstacles_laser:
     observation_sources: laser
     laser: {data_type: LaserScan, clearing: true, marking: true, topic: scan, inf_is_valid: true}
 
+GlobalPlanner:
+    cost_factor: 0.55
+    neutral_cost: 66
+    lethal_cost: 245
+
 inflation:
-    inflation_radius: 1.0
+    inflation_radius: 1.5
+
