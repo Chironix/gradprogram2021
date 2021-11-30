@@ -1,0 +1,12 @@
+local_costmap:
+  global_frame: odom # The global frame for the costmap to operate in. In the local costmap, this parameter has to be set to "/odom".
+  rolling_window: true # In the local costmap, this parameter has to be set to "true."
+
+  width: 20.0 # The width of the costmap in meters.
+  height: 20.0 # The height of the costmap in meters.
+  # origin_x: 0.0 # The x origin of the map in the global frame in meters.
+  # origin_y: 0.0 # The y origin of the map in the global frame in meters.
+
+  plugins:
+    - {name: obstacles_laser,           type: "costmap_2d::ObstacleLayer"}
+    - {name: inflation,                 type: "costmap_2d::InflationLayer"}

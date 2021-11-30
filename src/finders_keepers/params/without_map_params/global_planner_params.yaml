@@ -1,0 +1,13 @@
+NavfnROS:
+  allow_unknown: true # Specifies whether or not to allow navfn to create plans that traverse unknown space.
+  # NOTE: if you are using a layered costmap_2d costmap with a voxel or obstacle layer, you must also set the
+  # track_unknown_space param (global_costmap_params) for that layer to be true, or it will convert all of your unknown space to free space
+  # (which navfn will then happily go right through).
+  default_tolerance: 0.1 # A tolerance on the goal point for the planner.
+  # NavFn will attempt to create a plan that is as close to the specified goal as possible, but no farther away than
+  # the default tolerance.
+
+  ## planner_window_x: 0.0 # Specifies the x size of an optional window to restrict the planner to. This can be useful for
+  # restricting NavFn to work in a small window of a large costmap.
+  ## planner_window_y: 0.0 # Specifies the y size of an optional window to restrict the planner to. This can be useful for
+  # restricting NavFn to work in a small window of a large costmap.

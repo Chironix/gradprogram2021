@@ -1,0 +1,5 @@
+base_global_planner: navfn/NavfnROS # Sets the Navfn global planner
+base_local_planner: dwa_local_planner/DWAPlannerROS # Sets the dwa local planner
+# base_local_planner: base_local_planner/TrajectoryPlannerROS
+controller_frequency: 5.0 # The rate in Hz at which to run the control loop and send velocity commands to the base. 5.0
+recovery_behavior_enabled: false # Enables or disables the recovery behaviors.

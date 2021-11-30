@@ -1,0 +1,9 @@
+explore_find:
+  pos_tol: 0.75 # The max acceptable error in goal position
+  max_cycles: 2 # The max number of cyclic rotations allowed while achieving a given goal position
+                # It helps indicate if the robot has done a lot of rotations while it is trying to achieve a given goal
+                # position
+frontiers_finder:
+  min_frontier_size: 0.4  # The minimum size of frontier to be accepted as a frontier. It is the minimum acceptable
+  # radius (in meter) of a circle enclosing the frontier.
+  show_frontiers: True  # Whether to plot the map grayscale picture with the found frontiers on it while running.

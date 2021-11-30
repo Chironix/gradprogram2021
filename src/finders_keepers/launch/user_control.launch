@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="finders_keepers" type="user_control.py" name="ctrl_jackal" output="screen" />
+</launch>
