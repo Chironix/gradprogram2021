@@ -4,9 +4,8 @@
   <arg name="no_static_map" default="true" />
   <arg name="velocity_topic" default="/cmd_vel" />
   <arg name="base_global_planner" default="navfn/NavfnROS" />
-  <!--<arg name="base_global_planner" default="voronoi_planner/VoronoiPlanner"/>-->
   <arg name="base_local_planner" default="dwa_local_planner/DWAPlannerROS" />
-  <!--<arg name="base_local_planner" default="teb_local_planner/TebLocalPlannerROS" /> -->
+  <!-- <arg name="base_local_planner" default="teb_local_planner/TebLocalPlannerROS" /> -->
 
   <!-- <node name="slam_map_tf" pkg="tf" type="static_transform_publisher" args="0 0 0 0 0 0 /odom map 100"/> -->
 
@@ -27,10 +26,8 @@
 
     <!-- global costmap -->
     <rosparam file="$(find scout_navigation)/config/move_base/costmap_global.yaml" command="load" ns="global_costmap" if="$(arg no_static_map)" />
-    <!--<param name="global_costmap/width" value="35.0" if="$(arg no_static_map)"/>-->
-    <!--<param name="global_costmap/height" value="35.0" if="$(arg no_static_map)"/>-->
-    <param name="global_costmap/width" value="100.0" if="$(arg no_static_map)" /> 
-    <param name="global_costmap/height" value="100.0" if="$(arg no_static_map)" /> 
+    <param name="global_costmap/width" value="100.0" if="$(arg no_static_map)" />
+    <param name="global_costmap/height" value="100.0" if="$(arg no_static_map)" />
   </node>
 
 

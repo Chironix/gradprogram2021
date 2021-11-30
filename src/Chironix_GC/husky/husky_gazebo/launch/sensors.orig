@@ -3,7 +3,7 @@
   <node pkg="pointcloud_to_laserscan" type="pointcloud_to_laserscan_node" name="realsense_to_laserscan" output="screen">
 
       <remap from="cloud_in" to="realsense/depth/color/points"/>
-      <remap from="scan" to="/scan"/>
+      <remap from="scan" to="realsense/scan"/>
       <!-- TODO: modify these to match the Realsense D400 series parameters -->
       <rosparam>
           target_frame: base_link # Leave empty to output scan in the pointcloud frame
@@ -30,7 +30,7 @@
   <node pkg="pointcloud_to_laserscan" type="pointcloud_to_laserscan_node" name="velodyne_to_laserscan" output="screen">
 
     <remap from="cloud_in" to="/velodyne_points"/>
-    <remap from="scan" to="/velodyne/scan"/>
+    <remap from="scan" to="scan"/>
   </node>
 
 </launch>

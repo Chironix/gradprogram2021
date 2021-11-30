@@ -38,9 +38,8 @@
     <node name="scout_mini_robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
 
     <node pkg="pointcloud_to_laserscan" type="pointcloud_to_laserscan_node" name="velodyne_to_laserscan" output="screen">
+
         <remap from="cloud_in" to="/velodyne_points"/>
         <remap from="scan" to="scan"/>
-    </node>
-
-
+      </node>
 </launch>

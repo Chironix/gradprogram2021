@@ -6,6 +6,10 @@ update_frequency: 4.0
 publish_frequency: 3.0
 transform_tolerance: 0.5
 
+lethal_cost: 253
+neutral_cost: 66
+cost_factor: 0.55
+
 resolution: 0.05
 
 obstacle_range: 5.5
@@ -21,4 +25,4 @@ obstacles_laser:
     laser: {data_type: LaserScan, clearing: true, marking: true, topic: scan, inf_is_valid: true}
 
 inflation:
-    inflation_radius: 1.0
+    inflation_radius: 1.5
