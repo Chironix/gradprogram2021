@@ -10,10 +10,15 @@ This will need to be cloned and built if not already installed, e.g.
 
 ## Running
 To initialise sim
+
     roslaunch solutions scout_init.launch
+    
 To run exploration, mapping and apriltag detection
+
     roslaunch solutions scout_explore.launch
+    
 Apriltag detection results can also be viewed by subscribing to the `/apriltags` topic
+
     rostopic echo /apriltags
 
 # gradprogram2021
