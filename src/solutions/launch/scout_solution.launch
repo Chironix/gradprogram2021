@@ -1,0 +1,5 @@
+<launch>
+	<include file="$(find scout_navigation)/launch/gmapping.launch"/>
+	<include file="$(find solutions)/launch/scout_explore.launch"/>
+	<include file="$(find apriltag_reader)/launch/apriltag_reader_scout.launch"/>
+</launch>
