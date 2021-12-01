@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="finders_keepers" type="explore_find.py" name="explore_find" output="screen" />
+</launch>

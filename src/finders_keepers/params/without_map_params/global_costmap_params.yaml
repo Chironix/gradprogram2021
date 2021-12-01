@@ -1,0 +1,18 @@
+global_costmap:
+  global_frame: map # The global frame for the costmap to operate in.
+  rolling_window: false # Whether or not to use a rolling window version of the costmap.
+  # Set it to be true for mapless navigation, and set it to be false to initialize the costmap by getting the data from a static map.
+  static_map: true # Whether or not to use the static map to initialize the costmap. If the rolling_window parameter is set to true, this parameter must be set to false.
+  track_unknown_space: true # Specifies whether or not to track unknown space in the costmap.
+  # Set this parameter to true if the parameter allow_unknown is true in the global_planner parameters
+
+  width: 100.0 # The width of the costmap in meters.
+  height: 100.0 # The height of the costmap in meters.
+  # origin_x: 0.0 # The x origin of the map in the global frame in meters.
+  # origin_y: 0.0 # The y origin of the map in the global frame in meters.
+
+
+  plugins:
+    - {name: static_layer, type: "costmap_2d::StaticLayer"}
+    #- {name: obstacles_laser,           type: "costmap_2d::ObstacleLayer"}
+    - {name: inflation,                 type: "costmap_2d::InflationLayer"}

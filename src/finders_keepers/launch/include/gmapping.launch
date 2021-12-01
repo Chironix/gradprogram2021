@@ -1,0 +1,21 @@
+<launch>
+    <arg name="scan_topic" default="front/scan" />
+
+    <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen">
+        <rosparam file="$(find finders_keepers)/params/without_map_params/gmapping_params.yaml" command="load"/>
+        <remap from="$(arg scan_topic)" to="scan" />
+    </node>
+</launch>
+
+<!--
+<launch>
+    <arg name="scan_topic" default="custom_scan" />
+
+    <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen">
+        <rosparam file="$(find finders_keepers)/params/without_map_params/gmapping_params.yaml" command="load"/>
+        <remap from="scan" to="$(arg scan_topic)"/>
+         -->
+<!-- <remap from="$(arg scan_topic)" to="custom_scan" /> --><!--
+
+    </node>
+</launch> -->

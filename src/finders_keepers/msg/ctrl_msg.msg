@@ -1,0 +1,2 @@
+string ctrl_input
+string explore_find_status

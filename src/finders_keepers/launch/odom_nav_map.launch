@@ -1,0 +1,8 @@
+<launch>
+    <!-- Run move_base node -->
+    <include file="$(find finders_keepers)/launch/include/odom_nav.launch" />
+
+    <!-- Run slam_gmapping node -->
+    <include file="$(find finders_keepers)/launch/include/gmapping.launch" />
+
+</launch>
